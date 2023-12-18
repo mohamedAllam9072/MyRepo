@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.allam.myrepo.databinding.FragmentHomeBinding;
+import com.allam.myrepo.utils.dataStructure.MyStack;
 
 public class HomeFragment extends Fragment {
 
@@ -26,7 +27,19 @@ public class HomeFragment extends Fragment {
 
         final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+
+        implementStack();
         return root;
+    }
+
+    private void implementStack() {
+        MyStack stack = new MyStack(10);
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+       // stack.print();
     }
 
     @Override
