@@ -26,9 +26,8 @@ public class MyStack {
     }
 
     public boolean push(int input) {
-        if (top < stackSize) {
-            top++;
-            arr[top] = input;
+        if (top < stackSize - 1) {
+            arr[++top] = input;
             Log.d(TAG, "push:Success");
             return true;
         } else {
@@ -41,10 +40,12 @@ public class MyStack {
         if (isEmpty()) {
             Log.d(TAG, "pop: Stack UnderFlow");
             return 0;
-        } else if (top > 0) {
+        } else if (top >= 0) {
             int result = arr[top];
             top--;
+            Log.d(TAG, "pop:value " + result);
             return result;
+
         } else {
             Log.d(TAG, "pop: Stack UnderFlow");
             return 0;

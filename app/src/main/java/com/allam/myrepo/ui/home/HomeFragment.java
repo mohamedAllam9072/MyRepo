@@ -39,7 +39,28 @@ public class HomeFragment extends Fragment {
         stack.push(20);
         stack.push(30);
         stack.push(40);
-       // stack.print();
+//        stack.push(50);
+//        stack.push(60);
+//        stack.push(70);
+//        stack.push(80);
+//        stack.push(90);
+//        stack.push(100);
+//        stack.push(110);
+//
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+        stack.print();
     }
 
     @Override
