@@ -22,4 +22,8 @@
     <style name="Theme.MyRepo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.MyRepo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorControlActivated">#125080</item>
+        <item name="android:textColorPrimary">#125080</item>
+    </style>
 </resources>
